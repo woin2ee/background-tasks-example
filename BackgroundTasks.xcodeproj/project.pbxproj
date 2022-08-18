@@ -14,6 +14,12 @@
 		E81923EF28AE221C00CB3FFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E81923EE28AE221C00CB3FFE /* Assets.xcassets */; };
 		E81923F228AE221C00CB3FFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E81923F028AE221C00CB3FFE /* LaunchScreen.storyboard */; };
 		E819240428AE2DE800CB3FFE /* Logger+.swift in Sources */ = {isa = PBXBuildFile; fileRef = E819240328AE2DE800CB3FFE /* Logger+.swift */; };
+		E819240A28AE343F00CB3FFE /* CoreDataStorage.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E819240828AE343F00CB3FFE /* CoreDataStorage.xcdatamodeld */; };
+		E819240D28AE355600CB3FFE /* CoreDataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E819240C28AE355600CB3FFE /* CoreDataStorage.swift */; };
+		E819240F28AE358300CB3FFE /* MessageStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E819240E28AE358300CB3FFE /* MessageStorage.swift */; };
+		E819241228AE360400CB3FFE /* CoreDataMessageStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E819241128AE360400CB3FFE /* CoreDataMessageStorage.swift */; };
+		E819241628AE3E6300CB3FFE /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = E819241528AE3E6300CB3FFE /* Message.swift */; };
+		E819241828AE410800CB3FFE /* MessageEntity+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = E819241728AE410800CB3FFE /* MessageEntity+Mapping.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +32,12 @@
 		E81923F128AE221C00CB3FFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E81923F328AE221C00CB3FFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = BackgroundTasks/Resources/Info.plist; sourceTree = SOURCE_ROOT; };
 		E819240328AE2DE800CB3FFE /* Logger+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Logger+.swift"; sourceTree = "<group>"; };
+		E819240928AE343F00CB3FFE /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		E819240C28AE355600CB3FFE /* CoreDataStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStorage.swift; sourceTree = "<group>"; };
+		E819240E28AE358300CB3FFE /* MessageStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageStorage.swift; sourceTree = "<group>"; };
+		E819241128AE360400CB3FFE /* CoreDataMessageStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataMessageStorage.swift; sourceTree = "<group>"; };
+		E819241528AE3E6300CB3FFE /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		E819241728AE410800CB3FFE /* MessageEntity+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MessageEntity+Mapping.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +70,9 @@
 		E81923E428AE221A00CB3FFE /* BackgroundTasks */ = {
 			isa = PBXGroup;
 			children = (
+				E819241328AE3E5400CB3FFE /* Domain */,
 				E81923F928AE225D00CB3FFE /* Application */,
+				E819240528AE341800CB3FFE /* Data */,
 				E81923FB28AE226400CB3FFE /* Resources */,
 				E81923FA28AE226200CB3FFE /* Scenes */,
 				E81923FC28AE226900CB3FFE /* Utils */,
@@ -100,6 +114,74 @@
 				E819240328AE2DE800CB3FFE /* Logger+.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		E819240528AE341800CB3FFE /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				E819240B28AE34F500CB3FFE /* Message */,
+				E819240628AE341A00CB3FFE /* CoreData */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		E819240628AE341A00CB3FFE /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				E819240C28AE355600CB3FFE /* CoreDataStorage.swift */,
+				E819240828AE343F00CB3FFE /* CoreDataStorage.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		E819240B28AE34F500CB3FFE /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				E819241A28AE416E00CB3FFE /* CoreDataStorage */,
+				E819241928AE415700CB3FFE /* EntityMapping */,
+				E819241028AE35E500CB3FFE /* Interfaces */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		E819241028AE35E500CB3FFE /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				E819240E28AE358300CB3FFE /* MessageStorage.swift */,
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		E819241328AE3E5400CB3FFE /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				E819241428AE3E5B00CB3FFE /* Entities */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		E819241428AE3E5B00CB3FFE /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				E819241528AE3E6300CB3FFE /* Message.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		E819241928AE415700CB3FFE /* EntityMapping */ = {
+			isa = PBXGroup;
+			children = (
+				E819241728AE410800CB3FFE /* MessageEntity+Mapping.swift */,
+			);
+			path = EntityMapping;
+			sourceTree = "<group>";
+		};
+		E819241A28AE416E00CB3FFE /* CoreDataStorage */ = {
+			isa = PBXGroup;
+			children = (
+				E819241128AE360400CB3FFE /* CoreDataMessageStorage.swift */,
+			);
+			path = CoreDataStorage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,9 +255,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E819240D28AE355600CB3FFE /* CoreDataStorage.swift in Sources */,
 				E81923EA28AE221A00CB3FFE /* MainViewController.swift in Sources */,
+				E819240F28AE358300CB3FFE /* MessageStorage.swift in Sources */,
+				E819241628AE3E6300CB3FFE /* Message.swift in Sources */,
 				E81923E628AE221A00CB3FFE /* AppDelegate.swift in Sources */,
+				E819241228AE360400CB3FFE /* CoreDataMessageStorage.swift in Sources */,
+				E819240A28AE343F00CB3FFE /* CoreDataStorage.xcdatamodeld in Sources */,
 				E81923E828AE221A00CB3FFE /* SceneDelegate.swift in Sources */,
+				E819241828AE410800CB3FFE /* MessageEntity+Mapping.swift in Sources */,
 				E819240428AE2DE800CB3FFE /* Logger+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -396,6 +484,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E819240828AE343F00CB3FFE /* CoreDataStorage.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E819240928AE343F00CB3FFE /* Model.xcdatamodel */,
+			);
+			currentVersion = E819240928AE343F00CB3FFE /* Model.xcdatamodel */;
+			path = CoreDataStorage.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = E81923DA28AE221A00CB3FFE /* Project object */;
 }
