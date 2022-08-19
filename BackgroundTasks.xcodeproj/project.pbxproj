@@ -20,6 +20,7 @@
 		E819241228AE360400CB3FFE /* CoreDataMessageStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E819241128AE360400CB3FFE /* CoreDataMessageStorage.swift */; };
 		E819241628AE3E6300CB3FFE /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = E819241528AE3E6300CB3FFE /* Message.swift */; };
 		E819241828AE410800CB3FFE /* MessageEntity+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = E819241728AE410800CB3FFE /* MessageEntity+Mapping.swift */; };
+		E819242128AF53D100CB3FFE /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E819242028AF53D100CB3FFE /* MainViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		E819241128AE360400CB3FFE /* CoreDataMessageStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataMessageStorage.swift; sourceTree = "<group>"; };
 		E819241528AE3E6300CB3FFE /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		E819241728AE410800CB3FFE /* MessageEntity+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MessageEntity+Mapping.swift"; sourceTree = "<group>"; };
+		E819242028AF53D100CB3FFE /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,8 +94,7 @@
 		E81923FA28AE226200CB3FFE /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				E81923E928AE221A00CB3FFE /* MainViewController.swift */,
-				E81923EB28AE221A00CB3FFE /* Main.storyboard */,
+				E819241C28AF53AD00CB3FFE /* Main */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -184,6 +185,32 @@
 			path = CoreDataStorage;
 			sourceTree = "<group>";
 		};
+		E819241C28AF53AD00CB3FFE /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				E819241D28AF53B100CB3FFE /* View */,
+				E819241F28AF53C500CB3FFE /* ViewModel */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		E819241D28AF53B100CB3FFE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E81923E928AE221A00CB3FFE /* MainViewController.swift */,
+				E81923EB28AE221A00CB3FFE /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E819241F28AF53C500CB3FFE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E819242028AF53D100CB3FFE /* MainViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -265,6 +292,7 @@
 				E81923E828AE221A00CB3FFE /* SceneDelegate.swift in Sources */,
 				E819241828AE410800CB3FFE /* MessageEntity+Mapping.swift in Sources */,
 				E819240428AE2DE800CB3FFE /* Logger+.swift in Sources */,
+				E819242128AF53D100CB3FFE /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
