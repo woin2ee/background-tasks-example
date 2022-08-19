@@ -24,14 +24,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		E81923E228AE221A00CB3FFE /* BackgroundTasks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BackgroundTasks.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E81923E228AE221A00CB3FFE /* BackgroundTasksExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BackgroundTasksExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E81923E528AE221A00CB3FFE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E81923E728AE221A00CB3FFE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		E81923E928AE221A00CB3FFE /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		E81923EC28AE221A00CB3FFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E81923EE28AE221C00CB3FFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E81923F128AE221C00CB3FFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		E81923F328AE221C00CB3FFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = BackgroundTasks/Resources/Info.plist; sourceTree = SOURCE_ROOT; };
+		E81923F328AE221C00CB3FFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = BackgroundTasksExample/Resources/Info.plist; sourceTree = SOURCE_ROOT; };
 		E819240328AE2DE800CB3FFE /* Logger+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Logger+.swift"; sourceTree = "<group>"; };
 		E819240928AE343F00CB3FFE /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		E819240C28AE355600CB3FFE /* CoreDataStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStorage.swift; sourceTree = "<group>"; };
@@ -56,7 +56,7 @@
 		E81923D928AE221A00CB3FFE = {
 			isa = PBXGroup;
 			children = (
-				E81923E428AE221A00CB3FFE /* BackgroundTasks */,
+				E81923E428AE221A00CB3FFE /* BackgroundTasksExample */,
 				E81923E328AE221A00CB3FFE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -64,12 +64,12 @@
 		E81923E328AE221A00CB3FFE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E81923E228AE221A00CB3FFE /* BackgroundTasks.app */,
+				E81923E228AE221A00CB3FFE /* BackgroundTasksExample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E81923E428AE221A00CB3FFE /* BackgroundTasks */ = {
+		E81923E428AE221A00CB3FFE /* BackgroundTasksExample */ = {
 			isa = PBXGroup;
 			children = (
 				E81923F928AE225D00CB3FFE /* Application */,
@@ -79,7 +79,7 @@
 				E81923FA28AE226200CB3FFE /* Scenes */,
 				E81923FC28AE226900CB3FFE /* Utils */,
 			);
-			path = BackgroundTasks;
+			path = BackgroundTasksExample;
 			sourceTree = "<group>";
 		};
 		E81923F928AE225D00CB3FFE /* Application */ = {
@@ -214,9 +214,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E81923E128AE221A00CB3FFE /* BackgroundTasks */ = {
+		E81923E128AE221A00CB3FFE /* BackgroundTasksExample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E81923F628AE221C00CB3FFE /* Build configuration list for PBXNativeTarget "BackgroundTasks" */;
+			buildConfigurationList = E81923F628AE221C00CB3FFE /* Build configuration list for PBXNativeTarget "BackgroundTasksExample" */;
 			buildPhases = (
 				E81923DE28AE221A00CB3FFE /* Sources */,
 				E81923DF28AE221A00CB3FFE /* Frameworks */,
@@ -226,9 +226,9 @@
 			);
 			dependencies = (
 			);
-			name = BackgroundTasks;
+			name = BackgroundTasksExample;
 			productName = BackgroundTasks;
-			productReference = E81923E228AE221A00CB3FFE /* BackgroundTasks.app */;
+			productReference = E81923E228AE221A00CB3FFE /* BackgroundTasksExample.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -246,7 +246,7 @@
 					};
 				};
 			};
-			buildConfigurationList = E81923DD28AE221A00CB3FFE /* Build configuration list for PBXProject "BackgroundTasks" */;
+			buildConfigurationList = E81923DD28AE221A00CB3FFE /* Build configuration list for PBXProject "BackgroundTasksExample" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -259,7 +259,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E81923E128AE221A00CB3FFE /* BackgroundTasks */,
+				E81923E128AE221A00CB3FFE /* BackgroundTasksExample */,
 			);
 		};
 /* End PBXProject section */
@@ -441,7 +441,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2AVC8X7323;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = BackgroundTasks/Resources/Info.plist;
+				INFOPLIST_FILE = BackgroundTasksExample/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -453,7 +453,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = woin2ee.BackgroundTasks;
+				PRODUCT_BUNDLE_IDENTIFIER = woin2ee.BackgroundTasksExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -470,7 +470,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2AVC8X7323;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = BackgroundTasks/Resources/Info.plist;
+				INFOPLIST_FILE = BackgroundTasksExample/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -482,7 +482,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = woin2ee.BackgroundTasks;
+				PRODUCT_BUNDLE_IDENTIFIER = woin2ee.BackgroundTasksExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -493,7 +493,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E81923DD28AE221A00CB3FFE /* Build configuration list for PBXProject "BackgroundTasks" */ = {
+		E81923DD28AE221A00CB3FFE /* Build configuration list for PBXProject "BackgroundTasksExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E81923F428AE221C00CB3FFE /* Debug */,
@@ -502,7 +502,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E81923F628AE221C00CB3FFE /* Build configuration list for PBXNativeTarget "BackgroundTasks" */ = {
+		E81923F628AE221C00CB3FFE /* Build configuration list for PBXNativeTarget "BackgroundTasksExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E81923F728AE221C00CB3FFE /* Debug */,
