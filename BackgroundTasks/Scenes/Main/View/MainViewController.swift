@@ -20,6 +20,8 @@ final class MainViewController: UIViewController {
         }
     }
     
+    // MARK: - Life Cycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.bindViewModel()
@@ -48,7 +50,7 @@ final class MainViewController: UIViewController {
         self.messageTableView.insertRows(at: [indexPath], with: .automatic)
     }
     
-    // MARK: - Interaction
+    // MARK: - User Interaction
     
     @IBAction func didTapAddMesssageButton(_ sender: UIBarButtonItem) {
         self.viewModel.didTapAddMesssageButton()
