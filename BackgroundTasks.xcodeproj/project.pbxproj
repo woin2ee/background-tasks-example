@@ -72,9 +72,9 @@
 		E81923E428AE221A00CB3FFE /* BackgroundTasks */ = {
 			isa = PBXGroup;
 			children = (
-				E819241328AE3E5400CB3FFE /* Domain */,
 				E81923F928AE225D00CB3FFE /* Application */,
 				E819240528AE341800CB3FFE /* Data */,
+				E819241328AE3E5400CB3FFE /* Domain */,
 				E81923FB28AE226400CB3FFE /* Resources */,
 				E81923FA28AE226200CB3FFE /* Scenes */,
 				E81923FC28AE226900CB3FFE /* Utils */,

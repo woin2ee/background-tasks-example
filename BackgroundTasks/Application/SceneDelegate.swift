@@ -38,11 +38,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
     
     func sceneWillEnterForeground(_ scene: UIScene) {
-        Logger.test.notice("sceneWillEnterForeground")
+        Logger.appState.notice("sceneWillEnterForeground")
     }
     
     func sceneDidEnterBackground(_ scene: UIScene) {
-        Logger.test.notice("sceneDidEnterBackground")
+        Logger.appState.notice("sceneDidEnterBackground")
     }
     
     
