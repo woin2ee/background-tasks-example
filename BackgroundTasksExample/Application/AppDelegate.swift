@@ -15,6 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         Logger.appState.notice("applicationDidFinishLaunchingWithOptions")
+        BackgroundTasksHandler.shared.launchAppRefreshIfRequested(using: nil)
         return true
     }
     

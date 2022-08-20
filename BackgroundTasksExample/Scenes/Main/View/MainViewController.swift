@@ -25,6 +25,7 @@ final class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.bindViewModel()
+        self.addObservers()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -43,6 +44,19 @@ final class MainViewController: UIViewController {
                 }
             }
             .store(in: &cancellables)
+    }
+    
+    private func addObservers() {
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(self.viewWillEnterForeground),
+            name: UIApplication.willEnterForegroundNotification,
+            object: nil
+        )
+    }
+    
+    @objc private func viewWillEnterForeground() {
+        self.viewModel.fetchLatestMessages()
     }
     
     private func insertTableRowAtTop() {

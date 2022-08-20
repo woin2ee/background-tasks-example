@@ -21,6 +21,7 @@
 		E819241628AE3E6300CB3FFE /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = E819241528AE3E6300CB3FFE /* Message.swift */; };
 		E819241828AE410800CB3FFE /* MessageEntity+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = E819241728AE410800CB3FFE /* MessageEntity+Mapping.swift */; };
 		E819242128AF53D100CB3FFE /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E819242028AF53D100CB3FFE /* MainViewModel.swift */; };
+		E819242328AF7D7A00CB3FFE /* BackgroundTasksHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E819242228AF7D7A00CB3FFE /* BackgroundTasksHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		E819241528AE3E6300CB3FFE /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		E819241728AE410800CB3FFE /* MessageEntity+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MessageEntity+Mapping.swift"; sourceTree = "<group>"; };
 		E819242028AF53D100CB3FFE /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		E819242228AF7D7A00CB3FFE /* BackgroundTasksHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundTasksHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 			children = (
 				E81923E528AE221A00CB3FFE /* AppDelegate.swift */,
 				E81923E728AE221A00CB3FFE /* SceneDelegate.swift */,
+				E819242228AF7D7A00CB3FFE /* BackgroundTasksHandler.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -293,6 +296,7 @@
 				E819241828AE410800CB3FFE /* MessageEntity+Mapping.swift in Sources */,
 				E819240428AE2DE800CB3FFE /* Logger+.swift in Sources */,
 				E819242128AF53D100CB3FFE /* MainViewModel.swift in Sources */,
+				E819242328AF7D7A00CB3FFE /* BackgroundTasksHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

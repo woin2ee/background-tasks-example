@@ -16,6 +16,7 @@ enum RefreshType {
 
 protocol MainViewModelInputProtocol {
     func viewWillAppear()
+    func fetchLatestMessages()
     func didTapAddMesssageButton()
 }
 
@@ -32,6 +33,7 @@ final class MainViewModel: MainViewModelProtocol {
     private var messageStorage: MessageStorage
     
     // MARK: - Output
+    
     private(set) var messages: [Message] = []
     var sortedMessages: [Message] {
         messages.sorted(by: { $0.date > $1.date })
@@ -39,12 +41,18 @@ final class MainViewModel: MainViewModelProtocol {
     var refreshTrigger: PassthroughSubject<RefreshType, Never> = .init()
     
     // MARK: - Initialization
+    
     init(messageStorage: MessageStorage) {
         self.messageStorage = messageStorage
     }
     
     // MARK: - Input
+    
     func viewWillAppear() {
+        self.fetchLatestMessages()
+    }
+    
+    func fetchLatestMessages() {
         messageStorage.getMessages { result in
             switch result {
             case .success(let messages):

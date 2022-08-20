@@ -43,6 +43,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
     func sceneDidEnterBackground(_ scene: UIScene) {
         Logger.appState.notice("sceneDidEnterBackground")
+        BackgroundTasksHandler.shared.scheduleAppRefresh()
     }
     
     
