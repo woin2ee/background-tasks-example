@@ -1,5 +1,5 @@
 //
-//  BackgroundTasksHandler.swift
+//  BackgroundTasksManagement.swift
 //  BackgroundTasksExample
 //
 //  Created by Jaewon on 2022/08/19.
@@ -13,9 +13,9 @@ private enum BGSchdulerID {
     static let appRefresh = "com.refresh"
 }
 
-final class BackgroundTasksHandler {
+final class BackgroundTasksManagement {
     
-    static let shared = BackgroundTasksHandler.init()
+    static let shared = BackgroundTasksManagement.init()
     
     private var messageStorage: MessageStorage = CoreDataMessageStorage.init()
     
@@ -26,12 +26,12 @@ final class BackgroundTasksHandler {
             forTaskWithIdentifier: BGSchdulerID.appRefresh,
             using: nil,
             launchHandler: { task in
-                BackgroundTasksHandler.shared.handleAppRefresh(task: task as! BGAppRefreshTask)
+                BackgroundTasksManagement.shared.handleAppRefresh(task: task as! BGAppRefreshTask)
             }
         )
     }
     
-    func handleAppRefresh(task: BGAppRefreshTask) {
+    private func handleAppRefresh(task: BGAppRefreshTask) {
         self.scheduleAppRefresh()
         
         task.expirationHandler = {
